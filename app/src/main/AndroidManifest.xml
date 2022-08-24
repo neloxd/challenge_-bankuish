@@ -3,7 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="pe.com.jesus.villa.bankuishchallenge">
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -13,11 +17,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BankuishChallenge"
         tools:targetApi="31">
+
         <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.BankuishChallenge.NoActionBar">
+            android:name=".ui.detail.DetailActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

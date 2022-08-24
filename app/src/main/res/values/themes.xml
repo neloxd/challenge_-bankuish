@@ -22,4 +22,5 @@
     <style name="Theme.BankuishChallenge.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.BankuishChallenge.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>
